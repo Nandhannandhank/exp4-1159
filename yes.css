@@ -1,0 +1,159 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Body Background */
+  body {
+    background: url(https://img.freepik.com/free-photo/abstract-finance-background_23-2148589048.jpg?w=740&q=80) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Overlay for readability */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+    color: darkblue;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+    background-color: darkblue;
+    border-radius: 4px;
+  }
+  
+  /* Landing Container */
+  .landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 70px;
+    z-index: 2;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    z-index: 2;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .login-box label {
+    display: block;
+    margin: 12px 0 4px;
+    color: slategray;
+  }
+  
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  .login-box input:focus {
+    border-color: royalblue;
+    outline: none;
+    box-shadow: 0 0 5px royalblue;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  
+  .form-options a {
+    text-decoration: none;
+    color: royalblue;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .login-box button:hover {
+    background-color: navy;
+    transform: scale(1.05);
+  }
+  
